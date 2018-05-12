@@ -1,0 +1,37 @@
+<head>
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+    <div id="myDiv">
+        <!-- Plotly chart will be drawn inside this DIV -->
+    </div>
+    <script>
+        var trace1 = {
+            "x": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "y": [
+                0.28250825,
+                0.012798294,
+                0.04220892,
+                0.013130897,
+                0.013130897,
+                0.4986896,
+                0.24305747
+            ],
+            "type": "scatter"
+        };
+
+        var data = [trace1];
+        Plotly.newPlot('myDiv', data);
+    </script>
+</body>
